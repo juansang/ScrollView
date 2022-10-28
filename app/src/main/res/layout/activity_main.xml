@@ -4,7 +4,6 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_margin="23dp">
-
     <TextView
         android:id="@+id/article_heading"
         android:layout_width="match_parent"
@@ -40,5 +39,4 @@
                 android:text="@string/article_text" />
         </LinearLayout>
     </ScrollView>
-
 </RelativeLayout>
