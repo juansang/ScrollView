@@ -25,14 +25,6 @@ public class MainActivity extends AppCompatActivity {
         comment_box.setVisibility(View.INVISIBLE);
 
         saveButton = findViewById(R.id.addText_button);
-        saveButton.setVisibility(View.INVISIBLE);
-        saveButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                comment_box.setVisibility(View.INVISIBLE);
-                writeComment();
-            }
-        });
 
         comButton = findViewById(R.id.comment_button);
         comButton.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +32,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 comment_box.setVisibility(View.VISIBLE);
                 saveButton.setVisibility(View.VISIBLE);
+            }
+        });
+
+
+        saveButton.setVisibility(View.INVISIBLE);
+        saveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                comment_box.setVisibility(View.INVISIBLE);
+                writeComment();
             }
         });
 
